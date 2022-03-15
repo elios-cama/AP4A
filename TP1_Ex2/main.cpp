@@ -41,28 +41,6 @@ main()
     cout << "SORTIE TEST" << endl;
 }
 
-//	v1[0] = 2;
-//	v1[1] = 4;
-//	v1[2] = 6;
-
-
-//	cout << "v1 :	" << v1 << endl;
-
-//	v2 = v1;
-//	cout << "v2 = v1 :	" << v2 << endl;
-
-//	v2++;
-//	cout << "v2++ :	" << v2 << endl;
-
-//	v3 = v1 + v2;
-//	cout << "v3 = v1 + v2 :	" << v3 << endl;
-
-
-
-
-
-
-
 
 
 

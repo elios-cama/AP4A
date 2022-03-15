@@ -53,12 +53,12 @@ vecteur& vecteur::operator=(const vecteur& v){
 // incrementation/decr. : ++, ++(int), --
 vecteur& vecteur::operator++(){
     for(int i = 0; i<m_taille;++i){
-        this->tab[i] = this->tab[i]++;
+        this->tab[i] = this->tab[i] ;
     }
     return *this;
 
 }
-vecteur& vecteur::operator++(int i ){
+vecteur& vecteur::operator++(int i){
     for(int i = 0; i<m_taille;++i){
         this->tab[i] = this->tab[i]+ i;
     }
@@ -198,8 +198,21 @@ vecteur& vecteur::operator*(const vecteur &v){
 }
 
 
-// produit par un scalaire: n * v, v * n
 
+// produit par un scalaire: n * v, v * n
+vecteur& vecteur::operator*(double n){
+    for( int i=0;i<m_taille;i++){
+        tab[i] = this->tab[i] *n;
+    }
+    return *this;
+}
+
+vecteur& operator*(double n, vecteur& b){
+    for (int i=0;i<b.getTaille();i++){
+        b.tab[i] = n*b.tab[i];
+    }
+    return b;
+}
 
 //produit par un entier
 

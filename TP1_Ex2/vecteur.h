@@ -55,6 +55,7 @@ vecteur& operator*(const vecteur& v);
 
 // produit par un scalaire: v * n, n * v
 
+vecteur& operator*(double n);
 
 
 //vecteur operator*(int);
@@ -63,7 +64,7 @@ vecteur& operator*(int n);
 
 //friend vecteur operator*(int, vecteur&);
 
-
+friend vecteur& operator*(double n, vecteur& b);
 
 // auto-adition : +=(vecteur&), -=
 
